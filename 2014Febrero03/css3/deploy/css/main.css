@@ -1,0 +1,71 @@
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+ul li{
+	height: 40px;
+	text-align: center;
+	list-style: none;
+	margin: 0;
+}
+
+ul li:nth-child(1){
+	background-color: hsl(0, 80%, 50%);
+}
+
+ul li:nth-child(2){
+	background-color: hsl(30, 80%, 50%);
+}
+
+ul li:nth-child(3){
+	background-color: hsl(60, 80%, 50%);
+}
+
+ul li:nth-child(4){
+	background-color: hsl(90, 80%, 50%);
+}
+
+ul li:nth-child(5){
+	background-color: hsl(120, 80%, 50%);
+}
+
+ul li:nth-child(6){
+	background-color: hsl(150, 80%, 50%);
+}
+
+ul li:nth-child(7){
+	background-color: hsl(180, 80%, 50%);
+}
+
+ul li:nth-child(8){
+	background-color: hsl(210, 80%, 50%);
+}
+
+ul li:nth-child(9){
+	background-color: hsl(240, 80%, 50%);
+}
+
+ul li:nth-child(10){
+	background-color: hsl(270, 80%, 50%);
+}
+
+/*ul li:nth-child(11){
+	background-color: hsl(100, 80%, 50%);
+}
+
+ul li:nth-child(12){
+	background-color: hsl(110, 80%, 50%);
+}
+
+ul li:nth-child(13){
+	background-color: hsl(120, 80%, 50%);
+}
+
+ul li:nth-child(14){
+	background-color: hsl(150, 80%, 50%);
+}
+
+ul li:nth-child(15){
+	background-color: hsl(160, 90%, 50%);
+}*/
