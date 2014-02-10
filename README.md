@@ -1,4 +1,4 @@
-html5-pro
+HTML5 pro
 =========
 
-Clases de html5 / css3 / jquery para Media Mind
+Clases de html5 / css3 / javascript para MediaMind
