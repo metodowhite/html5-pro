@@ -1,0 +1,29 @@
+/*http://www.css3.info/preview/background-size/*/
+
+.contenedor{
+	background: url(../img/hatch.jpg) no-repeat;
+	width: 90%;
+	/*width: 900px;*/
+	height: 300px;
+	margin: 10px auto;
+	border: 3px solid gray;
+	border-radius: 17px;	
+}
+
+
+
+#contenedor_2{
+	background-size: 600px auto;
+}
+#contenedor_3{
+	background-size: auto 400px;
+}
+#contenedor_4{
+	background-size: 300px 300px;
+}
+#contenedor_5{
+	background-size: cover;
+}
+#contenedor_6{
+	background-size: contain;
+}

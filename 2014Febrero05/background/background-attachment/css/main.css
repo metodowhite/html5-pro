@@ -1,0 +1,37 @@
+/*http://www.css3.info/preview/background-size/*/
+/*http://css-tricks.com/almanac/*/
+/*http://css-tricks.com/almanac/properties/b/background/*/
+
+.contenedor{
+	height: 800px;
+	margin: 0;
+	text-align: center;
+	padding: 100px;
+}
+
+h1{
+	margin: 0;
+	font-size: 5em;
+	color: white;
+}
+
+#contenedor_1{
+	background: url(../img/img_1.jpg) no-repeat;
+	background-attachment: fixed;
+}
+#contenedor_2{
+	background: url(../img/img_2.jpg) no-repeat;
+
+	-webkit-box-shadow: 0 -5px 10px 7px rgba(0,0,0,.3);
+	box-shadow: 0 -5px 10px 7px rgba(0,0,0,.3);
+}
+#contenedor_3{
+	background: url(../img/img_1.jpg) no-repeat;
+	background-attachment: fixed;
+}
+#contenedor_4{
+	background: url(../img/img_3.jpg) no-repeat;
+	
+	-webkit-box-shadow: 0 -5px 10px 7px rgba(0,0,0,.3);
+	box-shadow: 0 -5px 10px 7px rgba(0,0,0,.3);
+}
