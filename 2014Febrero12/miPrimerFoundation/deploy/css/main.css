@@ -1,0 +1,149 @@
+@font-face {
+	font-family: 'brandonBold';
+	src: url('fonts/brandon_bld-webfont.eot');
+	src: url('fonts/brandon_bld-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/brandon_bld-webfont.woff') format('woff'),
+		 url('fonts/brandon_bld-webfont.ttf') format('truetype'),
+		 url('fonts/brandon_bld-webfont.svg#brandonBold') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'brandonBlack';
+	src: url('fonts/brandon_blk-webfont.eot');
+	src: url('fonts/brandon_blk-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/brandon_blk-webfont.woff') format('woff'),
+		 url('fonts/brandon_blk-webfont.ttf') format('truetype'),
+		 url('fonts/brandon_blk-webfont.svg#brandonBlack') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+body{
+	background-color: #f1f1f1;
+}
+
+ul{
+	margin-left: 0;
+}
+
+  ul li{
+	list-style: none;
+  }
+
+/* @group Main Nav */
+
+#main-nav{
+	background-color: #f1f1f1;
+	position: fixed;
+	left: 50%;
+
+	-webkit-transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+	transform:translateX(-50%);
+
+	z-index: 1;
+}
+
+ul#primary, ul#primary li{
+	height: 120px;
+}
+
+		ul#primary li{
+			width: 20%;
+			text-align: center;
+		}
+
+		ul#primary li:nth-child(1){
+			background-color: #5fc8d1;
+			width: 120px;
+		}
+
+			ul#primary li a.button{
+				background-color: transparent;
+				border: none;
+				font-family: 'brandonBold';
+				text-transform: uppercase;
+				font-size: 16px;
+				padding: 10px;
+				color: #809bb4;
+
+				position: relative;
+				top: 50%;
+				
+
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);
+
+			  /*-webkit-transform: translateY(-50%);
+			  transform: translateY(-50%);*/
+			}
+			
+			ul#primary li a.button:hover{
+				color: #44596e;
+				text-decoration: underline;
+			}
+
+			ul#primary li:first-child a.button{
+			  color: white;
+			  text-transform: capitalize;
+			  font-size: 36px;
+			}
+
+			ul#primary li:first-child a.button:hover{
+				text-decoration: none;
+			}
+
+			ul#primary li:last-child a.button{
+			  color: red;
+			}
+
+/* @end */		
+
+/*
+ul#primary, ul#primary li, #secondary{
+	  height: 120px;
+	}
+  
+	ul#primary li{
+	  width: 20%;
+	  text-align: center;
+	}
+
+	ul#primary li:first-child{
+	  background-color: #5fc8d1;
+	  width: 120px;
+	}
+
+		ul#primary li a.button{
+		  background-color: transparent;
+		  border: none;
+		  font-family: 'brandonBold';
+		  text-transform: uppercase;
+		  font-size: 16px;
+		  padding: 10px;
+		  color: #809bb4;
+
+		  position: relative;
+		  top: 50%;
+
+		  -webkit-transform: translateY(-50%);
+		  transform: translateY(-50%);
+		}
+
+		ul#primary li a.button:hover{
+		  color: #44596e;
+		  text-decoration: underline;
+		}
+		
+		ul#primary li:first-child a.button{
+		  color: white;
+		  text-transform: capitalize;
+		  font-size: 36px;
+		}*/
