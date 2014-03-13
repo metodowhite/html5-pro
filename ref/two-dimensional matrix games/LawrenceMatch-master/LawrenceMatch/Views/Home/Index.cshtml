@@ -1,0 +1,61 @@
+﻿<div class="row">
+    <div class="col-lg-12 game-body">
+
+        <div id="board"></div>
+
+        <!-- debug area -->
+        <!--<div id="bv" style="left:700px;top:0px;position:absolute"></div>-->
+
+        <div class="score-container ">
+            <div>
+                <button id="boring" class="btn btn-alert">See Colors</button>
+            </div>
+            <div>
+                <button id="hint" class="btn btn-danger">Get hint</button>
+            </div>
+            @if (@ViewBag.HighScore != null)
+            {
+                <div>
+                    <h3>Current High Score</h3>
+                    <h4>
+                        <span data-id="@ViewBag.HighScore.Score" id="highScore">@ViewBag.HighScore.Score</span> by
+                        <span id="highscore-name">@ViewBag.HighScore.Name</span>
+                        @if (ViewBag.HighScore.DateCreated != null)
+                        {
+                            <span>on <span id="highscore-date">@ViewBag.HighScore.DateCreated.ToString("MM/dd/yy")</span></span>
+                        }
+                    </h4>
+                </div>
+            }
+            <span>
+                Your Score:
+            </span> <span id="score">0</span>
+            <div>
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="username" id="username" class="form-control" required placeholder="Your name" />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" id="score-submit">Submit score early</button>
+                    </div>
+
+                    <p class="bg-danger">Submitting your score early is for <br />functionality testing, it will end your game</p>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="bv" style="left:800px; top:50px;position:absolute;"></div>
+<div id="hide" style="display:none"></div>
+
+@section Scripts {
+
+    <script type="text/javascript">
+        $(function () {
+            game.init();
+            apiStuff.init();
+        });
+    </script>
+}

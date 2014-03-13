@@ -1,0 +1,230 @@
+/* CSS RESETS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.cf:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+html[xmlns] .cf {
+    display: block;
+}
+ 
+* html .cf {
+    height: 1%;
+}
+
+body {
+	font-family: "Helvetica Neue";
+}
+h1 {
+	color: #666;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+#game { 
+	left: 0;
+	margin: -250px auto 0;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 400px;
+	z-index: 0;
+}
+#gameTop { 
+	background: #ccc;
+	border-radius: 8px 8px 0 0;
+	padding: 10px;
+	width: 400px;
+}
+#game h1 {
+	float: left;
+}
+#score {
+	color: #fff;
+	float: right;
+	font-size: 24px;
+	height: 18px;
+	line-height: 18px;
+	margin: 10px 0 0;
+	padding: 10px;
+	text-align: right;
+	text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+	width: 175px;
+}
+#timer {
+	background: #666;
+	border-radius: 8px;
+	box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.8);
+	color: #fff;
+	float: right;
+	height: 18px;
+	line-height: 18px;
+	margin: 10px 0 0;
+	padding: 10px;
+	text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+}
+#modal {
+	background: rgba(0,0,0,0.7);
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 100%
+}
+#menu {
+	background: #f3f3f3;
+	border-radius: 4px;
+	min-height: 200px;
+	left: 0;
+	margin: -100px auto 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 50%;
+	width: 350px;
+	z-index: 999;
+}
+#initials {
+	margin: 0 0 10px;
+}
+#initials input {
+	border: 1px #f3f3f3 solid;
+	border-radius: 4px;
+	box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+	font-style: italic;
+	font-size: 14px;
+	padding: 5px 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#highScores {
+	color: #00F;
+	font-size: 20px;
+	font-weight: bold;
+}
+#highScores ol {
+	text-align: left;
+	list-style-type: decimal;
+	padding: 0 165px 10px;
+}
+#highScores ol li {
+	width: 100%;
+	padding: 5px;
+}
+#start {
+	background: purple;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	height: 15px;
+	letter-spacing: .05em;
+	margin: 0 auto 20px;
+	padding: 10px;
+	width: 100px;
+}
+#start:hover {
+	background-color: #CA6ACA;
+}
+#gameBoard {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #545454 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#545454)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#545454 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#545454 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#545454 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#545454 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#545454',GradientType=0 ); /* IE6-9 */
+	border: 10px #fff solid;
+	border-radius: 0 0 8px 8px;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.8);
+	margin: 0 auto;
+	position: relative;
+}
+
+.column {
+	position: absolute;
+}
+.gem {
+	border-radius: 20px;
+	cursor: pointer;
+	opacity: .5;
+	position: absolute;
+}
+.yellow {
+	background-color: yellow;
+}
+.red {
+	background-color: red;
+}
+.blue {
+	background-color: blue;
+}
+.green {
+	background-color: green;
+}
+.purple {
+	background-color: purple;
+	
+}
+
+::-webkit-input-placeholder {
+   color: #666;
+   text-transform: capitalize;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #666;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #666;
+}
+:-ms-input-placeholder {  
+   color: #666;
+}

@@ -1,0 +1,15 @@
+li {
+	display: inline-block;
+}
+
+img{
+	transition: all .3s;
+}
+
+.showMurray {
+	-webkit-transform: scale(2) rotate(360deg);
+	-moz-transform: scale(2) rotate(360deg);
+	-ms-transform: scale(2) rotate(360deg);
+	-o-transform: scale(2) rotate(360deg);
+	transform: scale(2) rotate(360deg);
+}

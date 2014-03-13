@@ -1,0 +1,174 @@
+﻿.game-body {
+    min-height:800px;
+}
+
+#board {
+    width: 672px;
+    height: 672px;
+    position: absolute;
+    background:#EFEFEF;
+    border:2px solid #333;
+}
+#board-loading {
+    width: 672px;
+    height: 672px;
+    position: absolute;
+    background: #FFF;
+    border: 2px solid #333;
+    z-index:5;
+}
+.loader {
+    height:128px;
+    width:128px;
+    position:absolute;
+    top: 272px;
+    left:272px;
+    z-index:10;
+    background:url("/Content/img/ajax_loader.gif");
+}
+
+.gem {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border: 2px solid #3276b1;
+    background-position:center, center;
+    background-repeat: no-repeat;
+    background-color:#FFF;
+}
+
+.gem.highlight {
+
+    border: 2px solid red;
+    opacity: .6;
+
+}
+.gem.hint {
+    height:78px;
+    width:78px;
+    border: 4px solid yellow;
+}
+.face-0 {
+    background:url("/Content/img/jennifer.jpg") center center no-repeat;
+}
+
+.face-1 {
+    background:url("/Content/img/joey.jpg") center center no-repeat;
+}
+
+.face-2 {
+    background:url("/Content/img/fishburne.png") center center no-repeat;
+}
+
+.face-3 {
+    background:url("/Content/img/dh.jpg") center center no-repeat;
+}
+
+.face-4 {
+    background:url("/Content/img/krauss.jpg") center center no-repeat;
+}
+
+.face-5 {
+    background:url("/Content/img/martin.jpg") center center no-repeat;
+}
+
+.face-6 {
+    background:url("/Content/img/odonnell.jpg") center center no-repeat;
+}
+
+.face-7 {
+    background:url("/Content/img/ofArabia.jpg") center center no-repeat;
+}
+.face-0.boring {
+    background:red;
+}
+
+.face-1.boring {
+    background:blue;
+}
+
+.face-2.boring {
+    background:green;
+}
+
+.face-3.boring {
+    background:purple;
+}
+
+.face-4.boring {
+    background:orange;
+}
+
+.face-5.boring {
+    background:maroon;
+}
+
+.face-6.boring {
+    background:magenta;
+}
+
+.face-7.boring {
+    background:cyan;
+}
+.gem.highlight {
+    border: 2px solid red;
+}
+
+
+.game-over,#new-high-score {
+    position: absolute;
+    top: 0;
+    width: 672px;
+    height: 672px;
+    background-color: #333;
+    opacity: .9;
+    text-align: center;
+}
+
+.game-over-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    text-align:center;
+    margin-top:280px;
+}
+.score-container {
+    left: 700px;
+    top: 200px;
+    position: absolute;
+}
+#username {
+    margin: 10px 0;
+}
+.new-high-score-text {
+    color: #ff6a00;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    text-align:center;
+    height:200px;
+    margin-top:236px;
+
+}
+#boring {
+    width:100px;
+    text-align:center;
+    margin:10px 0;
+}
+.nope {
+    position:relative;
+    height:224px;
+    width: 304px;
+    left: 187px;
+    top:181px;
+    background: url('/Content/img/nopegif.gif') center center no-repeat;
+}
+/* Debugging stuff */
+.bv-cell {
+    width: 20px;
+    height: 10px;
+    text-align: center;
+    display: inline-block;
+    color:#000;
+}

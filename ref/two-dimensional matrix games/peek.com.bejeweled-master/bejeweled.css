@@ -1,0 +1,148 @@
+* {margin: 0; border: 0; padding: 0;}
+
+#gameboard {
+    width: 432px;
+    min-width: 432px;
+    max-width: 432px;
+    height: 432px;
+    min-height: 432px;            
+    max-height: 432px;
+    background: #bbbbff;
+    border: 5px solid black;
+    font-size: 0;
+}
+
+#gameboard img {
+    -webkit-transition: opacity, -webkit-transform;
+    -moz-transition: opacity, -moz-transform;
+    transition: opacity, transform;
+    
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+
+    margin: 2px;
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+@-webkit-keyframes glow {
+    0% {
+        -webkit-filter: brightness(1.0);
+    }
+    50% {
+        -webkit-filter: brightness(2.5);
+    }
+    100% {
+        -webkit-filter: brightness(1.0);
+    }
+}
+
+@-moz-keyframes glow {
+    0% {
+        -moz-filter: brightness(1.0);
+    }
+    50% {
+        -moz-filter: brightness(2.5);
+    }
+    100% {
+        -moz-filter: brightness(1.0);
+    }
+}
+
+@keyframes glow {
+    0% {
+        filter: brightness(1.0);
+    }
+    50% {
+        filter: brightness(2.5);
+    }
+    100% {
+        filter: brightness(1.0);
+    }
+}
+
+.glow {
+    outline: 3px solid #336633;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-duration: 4s;
+    -moz-animation-duration: 4s;
+    animation-duration: 4s;
+
+    -webkit-animation-name: glow;
+    -moz-animation-name: glow;
+    animation-name: glow;
+
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+.mark {
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.destroy {
+    opacity: 0;
+}
+
+#message {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 24pt;
+    color: red;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#score, #scoreBox{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 24pt;
+    padding: 3px;
+}
+
+#scoreBox {
+    border: 1px solid black;
+    width: 200px;
+    text-align: right;
+}
+
+#scoreButton {
+    padding: 3px;
+    border: 2px solid black;
+}
+
+#highScores {
+    margin-top: 20px;
+    font-size: 12pt;
+}
+
+#highScores table, #highScores td {
+    border: 1px solid black;
+}
+
+#highScores table {
+    width: 208px;
+    border-collapse: collapse;
+}
+
+#highScores td {
+    padding: 2px;
+}

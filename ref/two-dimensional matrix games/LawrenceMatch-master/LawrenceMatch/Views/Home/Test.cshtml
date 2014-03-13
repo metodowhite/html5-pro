@@ -1,0 +1,133 @@
+﻿@{
+    ViewBag.Title = "Test";
+}
+<style>
+    #a, #b, #c, #log {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+    }
+
+    #a {
+        top: 100px;
+        left: 0;
+        background: red;
+    }
+
+    #b {
+        top: 100px;
+        left: 50px;
+        background: blue;
+    }
+
+    #c {
+        top: 100px;
+        left: 100px;
+        background: green;
+    }
+
+    #log {
+        top: 100px;
+        left: 0;
+    }
+
+    #con {
+        height: 500px;
+    }
+</style>
+<div id="con">
+    <h2>Test</h2>
+    <div id="a"></div>
+    <div id="c"></div>
+    <div id="b"></div>
+    <div id="log"></div>
+</div>
+@section Scripts {
+    <script type="text/javascript">
+
+
+        var i = 0;
+        var q = $({});
+        $(function () {
+
+            //animStack = [];
+            //function doAnim(i,func) {
+            //    var rest = [].splice.call(arguments, 1);
+            //    var promise = $.Deferred();
+            //    q.queue(function () {
+            //        func()
+            //    });
+
+            //}
+            //while (i < 5) {
+            //    doAnim(i, function () {
+            //        $("#a").animate({ top: "+=50" });
+            //    });
+            //    i++;
+            //}
+            //while (i < 9) {
+            //    doAnim(i, function () {
+            //        $("#b").animate({ top: "+=50" });
+            //    });
+            //    i++;
+            //}
+            this.log = function (message) {
+                $('#log').append('<p>' + message + '</p>');
+            }
+            this.an = function (func) {
+                func();
+            }
+            var Queue = function () {
+                var lastPromise = null;
+
+                this.add = function (obj, method, args, context) {
+                    var methodDeferred = $.Deferred();
+                    var queueDeferred = this.setup();
+                    if (context === undefined) { context = obj; }
+
+                    // execute next queue method
+                    queueDeferred.done(function () {
+
+
+                        // call actual method and wrap output in deferred
+                        setTimeout(function () {
+                            obj[method].apply(context, args);
+                            methodDeferred.resolve();
+                        }, 100);
+
+
+                    });
+                    lastPromise = methodDeferred.promise();
+                };
+
+                this.setup = function () {
+                    var queueDeferred = $.Deferred();
+
+                    // when the previous method returns, resolve this one
+                    $.when(lastPromise).always(function () {
+                        queueDeferred.resolve();
+                    });
+
+                    return queueDeferred.promise();
+                }
+            };
+
+            var q = new Queue();
+            q.add(this, 'log', ['one']);
+            q.add(this, 'log', ['two']);
+            q.add(this, 'log', ['three']);
+ 
+            q.add(this, 'log', ['four']);
+            var a = function () { $("#a").animate({ top: "+=50" }); }
+            q.add(this, 'an', [a]);
+        
+
+        });
+
+
+
+
+
+
+    </script>
+}

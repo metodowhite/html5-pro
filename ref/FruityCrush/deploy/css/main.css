@@ -1,0 +1,57 @@
+body{
+	background-color: gray;
+}
+
+section {
+	width: 1150px;
+}
+
+article {
+	background-size: cover;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin: 3px;
+}
+
+.papaya{
+	background-image: url(../images/papaya.png);
+}
+
+.pera{
+	background-image: url(../images/pera.png);
+}
+
+.manzana{
+	background-image: url(../images/manzana.png);
+}
+
+.mango{
+	background-image: url(../images/mango.png);
+}
+
+.platano{
+	background-image: url(../images/platano.png);
+}
+
+.maracuya{
+	background-image: url(../images/maracuya.png);
+}
+
+.lichi{
+	background-image: url(../images/lichi.png);
+}
+
+.mandarina{
+	background-image: url(../images/mandarina.png);
+}
+
+.coco{
+	background-image: url(../images/coco.png);
+}
+
+
+.match{
+	border: 1px solid red;
+	/*background-color: rgba(255,0,0,.1);*/
+}
